@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- jQuary js-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="styfle.css">
+  </head>
+  
+  <body>
+  <!-- Navbar -->
+  <nav class="navbar shadow mb-4 sticky-top navbar-expand-lg navbar-dark bg-primary bg-gradient">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Sales Per Sift</a>
+          <a class="nav-link active" href="#">Total Cash Drop</a>
+          <a class="nav-link active" href="#">Total Sales</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+  </div>
+  
+  <!-- Sales Per Sift -->
+  <section class="sales_persift">
+    <div class="container">
+      <div class="shadow input-group-lg mt-3 rounded">
+        <input type="text" class="form-control text-center mb-4 rounded bg-info" aria-label="Recipient's username" aria-describedby="button-addon2" value="Total Sales Per Sift" readonly>
+      </div>
+      <form class="mb-3">
+        <div class="shadow input-group mb-3 rounded">
+          <span class="input-group-text bg-info ">POS 1</span>
+          <input id="sales_1" type="number" placeholder="Total sales" aria-label="First name" class="form-control">
+          <input id="cust_1" type="number" placeholder="Total customer" aria-label="Last name" class="form-control">
+        </div>
+        <div class="shadow input-group mb-3 rounded">
+          <span class="input-group-text bg-info">POS 2</span>
+          <input id="sales_2" type="number" placeholder="Total sales" aria-label="First name" class="form-control">
+          <input id="cust_2" type="number" placeholder="Total customer" aria-label="Last name" class="form-control">
+        </div>
+        <div class="shadow input-group mb-3 rounded">
+          <span class="input-group-text bg-info">POS 3</span>
+          <input id="sales_3" type="number" placeholder="Total sales" placeholder"First name" class="form-control">
+          <input id="cust_3" type="number" placeholder="Total customer" aria-label="Last name" class="form-control">
+        </div>
+        <div class="row">
+          <div class="col-10">
+            <div class="row ms-1 align-items-end" style="height: 150px">
+              <div id="area_salesPerSift" class="shadow rounded bg-gradient" style="height: 150px; background-color: aqua;">
+              </div>
+            </div>
+          </div>
+          <div class="col-2 d-flex flex-column justify-content-between align-items-center">
+            <div>
+              <button id="btn_salesPerSift" class="btn shadow btn-outline-secondary text-light bg-primary " type="button" id="button-addon2"><i class="bi bi-cursor"></i></button>
+            </div>
+            <div>
+              <button class="btn-sm shadow bg-info visually-hidden" type="button"><i class="bi bi-clipboard"></i></button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  
+  <!-- Total Cash Drop -->
+  <section class="cash_drop">
+    
+  </section>
+  
+  
+  <!-- Total Sales -->
+  <section class="total_sales">
+    <div class="container">
+      
+    </div>
+  </section>
+  
+  <!-- Footer-->
+  <footer>
+    <div class="container">
+      
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
