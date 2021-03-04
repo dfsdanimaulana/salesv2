@@ -13,13 +13,14 @@
 
     <!-- jQuary js-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Hello, world!</title>
     <link rel="stylesheet" href="stylye.css">
   </head>
   
   <body style="background-color: aqua">
   <!-- Navbar -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary bg-gradient">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary bg-gradient">
     <div class="container">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +36,8 @@
     </div>
   </nav>
   <!-- Sales Per Sift -->
-  <section class="p-3" >
-    <div class="container my-3 rounded" >
+  <section class="p-4 mt-5" >
+    <div class="container rounded" >
       <div class="shadow input-group-lg rounded">
         <input type="text" class="form-control text-center mb-4 rounded bg-info" aria-label="Recipient's username" aria-describedby="button-addon2" value="TOTAL SALES PER SIFT" readonly>
       </div>
@@ -62,7 +63,7 @@
           </div>
           <div class="col-2 d-flex flex-column justify-content-between align-items-center">
             <div>
-              <button id="btn_salesPerSift" class="btn-sm shadow btn-outline-secondary text-light bg-primary " type="button" id="button-addon2"><i class="bi bi-cursor"></i></button>
+              <button id="btn_salesPerSift" class="btn-sm shadow btn-outline-info text-light bg-primary " type="button" id="button-addon2"><i class="bi bi-cursor"></i></button>
             </div>
             <div>
               <button id="copy_salesPerSift" class="btn-sm shadow bg-info visually-hidden" type="button"><i class="bi bi-clipboard"></i></button>
