@@ -14,7 +14,7 @@
     <!-- jQuary js-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
-    <link rel="stylesheet" href="styyle.css">
+    <link rel="stylesheet" href="stylye.css">
   </head>
   
   <body style="background-color: aqua">
@@ -35,10 +35,10 @@
     </div>
   </nav>
   <!-- Sales Per Sift -->
-  <section >
-    <div class="container my-3 shadow rounded" >
+  <section class="p-3" >
+    <div class="container my-3 rounded" >
       <div class="shadow input-group-lg rounded">
-        <input type="text" class="form-control text-center mb-4 rounded bg-info" aria-label="Recipient's username" aria-describedby="button-addon2" value="Total Sales Per Sift" readonly>
+        <input type="text" class="form-control text-center mb-4 rounded bg-info" aria-label="Recipient's username" aria-describedby="button-addon2" value="TOTAL SALES PER SIFT" readonly>
       </div>
       <form class="mb-3">
         <div class="shadow input-group mb-3 rounded">
@@ -58,22 +58,20 @@
         </div>
         <div class="row">
           <div class="col-10">
-            
-              <div id="area_salesPerSift" class="shadow d-flex justify-content-start ps-3 align-items-center rounded bg-gradient" style="height: 100px; background-color: #fff;"></div>
-              <div class=""></div>
+              <div id="area_salesPerSift" class=" container shadow rounded" style="height: 80px; background-color: white;"></div>
           </div>
           <div class="col-2 d-flex flex-column justify-content-between align-items-center">
             <div>
-              <button id="btn_salesPerSift" onclick="getValue()" class="btn shadow btn-outline-secondary text-light bg-primary " type="button" id="button-addon2"><i class="bi bi-cursor"></i></button>
+              <button id="btn_salesPerSift" class="btn-sm shadow btn-outline-secondary text-light bg-primary " type="button" id="button-addon2"><i class="bi bi-cursor"></i></button>
             </div>
             <div>
-              <button class="btn-sm shadow bg-info visually-hidden" type="button"><i class="bi bi-clipboard"></i></button>
+              <button id="copy_salesPerSift" class="btn-sm shadow bg-info visually-hidden" type="button"><i class="bi bi-clipboard"></i></button>
             </div>
           </div>
         </div>
       </form>
-      <div class="shadow input-group-lg mt-3 rounded">
-        <input type="text" class="form-control text-center mb-4 rounded bg-info" aria-label="Recipient's username" aria-describedby="button-addon2" placeholder="" readonly>
+      <div class="shadow input-group-lg rounded">
+        <input type="text" class="form-control my-3 text-center mb-4 rounded bg-info" aria-label="Recipient's username" aria-describedby="button-addon2" placeholder="" readonly>
       </div>
     </div>
   </section>
@@ -98,6 +96,6 @@
     </div>
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

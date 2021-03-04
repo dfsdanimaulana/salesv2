@@ -5,7 +5,6 @@ p3 = document.getElementById('sales_3'),
 c1 = document.getElementById('cust_1'),
 c2 = document.getElementById('cust_2'),
 c3 = document.getElementById('cust_3');
-
 var rupiah = (ribuan)=>{
   var	reverse = ribuan.toString().split('').reverse().join(''),
   ribuan = reverse.match(/\d{1,3}/g);
@@ -18,24 +17,14 @@ function getValue() {
   var average = parseInt(eval(totalPos/totalCust));
   var textArea=document.getElementById('area_salesPerSift');
   textArea.innerHTML='Rp.'+rupiah(totalPos)+'<br/>'+'CC : '+totalCust+'<br/>'+'Avg : Rp.'+rupiah(average);
-let pbaru=document.createElement('p');
-let pisi=document.createTextNode('Tekan untuk mengcopy');
-let p=pbaru.appendChild(pisi);
-let parent=document.getElementById('parent');
-let hasil=document.getElementById('hasil');
-parent.insertBefore(p,hasil);
+  $('#copy_salesPerSift').toggleClass('visually-hidden');
 }
-/**
-var span = document.getElementById("hasil");
+
+$('#btn_salesPerSift').click(()=>getValue())
+var span = document.getElementById("area_salesPerSift");
 function copyText(){
     document.execCommand("copy");
-  if(span.innerHTML==' '){
-  }else{
-    alert('Berhasil di Copy');
-   }
 }
-
-
 span.addEventListener("copy", function(event){
   event.preventDefault()
   
@@ -43,6 +32,9 @@ if (event.clipboardData) {
     event.clipboardData.setData("text/plain", span.textContent);
   }
 });
+
+
+/**
 function getCash(){
 var cash1=document.getElementById('cash1');
 var cash2=document.getElementById('cash2');
