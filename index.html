@@ -26,8 +26,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
        <i class="bi bi-list"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav ">
           <a class="nav-link active" aria-current="page" href="#">Sales Per Sift</a>
           <a class="nav-link active" href="#">Total Cash Drop</a>
           <a class="nav-link active" href="#">Total Sales</a>
@@ -78,8 +78,39 @@
   </section>
   
   <!-- Total Cash Drop -->
-  <section class="cash_drop">
-    
+  <section class="cash_drop p-4 mt-5">
+    <div class="container">
+      <div class="shadow input-group-lg rounded">
+        <input type="text" class="form-control text-center mb-4 rounded bg-info" aria-label="Recipient's username" aria-describedby="button-addon2" value="TOTAL CASH DROP" readonly>
+      </div>
+      <form class="mb-3">
+        <div class="shadow input-group mb-3 rounded">
+          <span class="input-group-text bg-info ">POS 1</span>
+          <input id="cash_1" type="number" placeholder="Total cash drop" aria-label="First name" class="form-control">
+        </div>
+        <div class="shadow input-group mb-3 rounded">
+          <span class="input-group-text bg-info">POS 2</span>
+          <input id="cash_2" type="number" placeholder="Total cash drop" aria-label="First name" class="form-control">
+        </div>
+        <div class="shadow input-group mb-3 rounded">
+          <span class="input-group-text bg-info">POS 3</span>
+          <input id="cash_3" type="number" placeholder="Total cash drop" placeholder"First name" class="form-control">
+        </div>
+        <div class="row">
+          <div class="col-10">
+              <div id="area_cashDrop" class=" container shadow rounded" style="height: 80px; background-color: white;"></div>
+          </div>
+          <div class="col-2 d-flex flex-column justify-content-between align-items-center">
+            <div>
+              <button id="btn_cashDrop" class="btn-sm shadow btn-outline-info text-light bg-primary " type="button" id="button-addon2"><i class="bi bi-cursor"></i></button>
+            </div>
+            <div>
+              <button id="copy_cashDrop" class="btn-sm shadow bg-info visually-hidden" type="button"><i class="bi bi-clipboard"></i></button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </section>
   
   
