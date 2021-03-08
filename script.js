@@ -15,7 +15,6 @@ $(function(){
       const average = parseInt(sum_sales / sum_cust);
       const res =`Rp.${rp(sum_sales)}</br>CC : ${rp(sum_cust)}</br>Avg : ${rp(average)}`;
       $('#area_salesPerSift').html(res);
-      $('#reset_salesPerSift').toggleClass('visually-hidden');
     }
   })
   $('#btn_cashDrop').click(function(){
@@ -27,7 +26,6 @@ $(function(){
     }else{
       const sum_cash = rp(eval(cash[0]+'+'+cash[1]+'+'+cash[2]));
       $('#area_cashDrop').text('Rp.'+sum_cash);
-      $('#reset_cashDrop').toggleClass('visually-hidden');
     }
   })
   $('#reset_salesPerSift').click(function(){
