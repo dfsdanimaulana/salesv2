@@ -8,6 +8,11 @@
     <!-- Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
+    <!-- font style lobster -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
@@ -16,20 +21,34 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Sales Count</title>
     <link rel="stylesheet" href="stylye.css">
+    <style>
+        .lob {
+            font-family: 'Lobster';
+
+        }
+        .serif {
+            font-family: Serif;
+        }
+        body {
+            background-color: aqua;
+            font-family: Serif;
+        }
+
+    </style>
 </head>
 
-<body style="background-color: aqua">
+<body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-dark bg-primary">
         <div class="container">
-            <span class="navbar-brand">Menu</span>
+            <span class="navbar-brand">Sales Counter</span>
         </div>
     </nav>
     <!-- Sales Per Sift -->
     <section class="p-4 mt-5">
         <div class="container rounded">
             <div class="shadow input-group-lg rounded">
-                <input type="text" class="form-control text-center mb-4 rounded bg-primary bg-gradient text-light" aria-label="Recipient's username" aria-describedby="button-addon2" value="TOTAL SALES PER SIFT" readonly>
+                <input type="text" class="form-control text-center mb-4 rounded bg-primary bg-gradient text-dark" aria-label="Recipient's username" aria-describedby="button-addon2" value="TOTAL SALES PER SIFT" readonly>
             </div>
             <form class="mb-3">
                 <div class="shadow input-group mb-3 rounded">
@@ -71,7 +90,7 @@
     <section class="cash_drop p-4 mt-5">
         <div class="container">
             <div class="shadow input-group-lg rounded">
-                <input type="text" class="form-control text-center text-light mb-4 rounded bg-danger bg-gradient" aria-label="Recipient's username" aria-describedby="button-addon2" value="TOTAL CASH DROP" readonly>
+                <input type="text" class="form-control text-center text-dark serif mb-4 rounded bg-danger bg-gradient" aria-label="Recipient's username" aria-describedby="button-addon2" value="TOTAL CASH DROP" readonly>
             </div>
             <form class="mb-3">
                 <div class="shadow input-group mb-3 rounded">
@@ -121,9 +140,9 @@
     </section>
 
     <!-- Footer-->
-    <footer>
-        <div class="container">
-
+    <footer class="lob">
+        <div class="navbar container-fluid bg-dark d-flex justify-content-center">
+            <span style="color:white;">Copyright © 2021 <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/dnm17_" style="text-decoration:none;color:white;">Dani Maulana</a></span>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
